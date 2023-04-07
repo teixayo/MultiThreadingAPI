@@ -1,3 +1,7 @@
+/**
+ * @author teixayo
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -5,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.function.IntConsumer;
 
-public class MultiThreadingAPI {
+public final class MultiThreadingAPI {
 
     public static void runAsync(int size, int threads, IntConsumer action) {
         ExecutorService executor = Executors.newFixedThreadPool(threads);

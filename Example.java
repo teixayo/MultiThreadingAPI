@@ -20,13 +20,13 @@ public class Example {
             long start = System.currentTimeMillis();
             runMultiThreading();
             long end = System.currentTimeMillis();
+            
             System.out.println((end - start) + " MS | MULTI THREADING (" + Runtime.getRuntime().availableProcessors() + " THREAD)");
         }
     }
 
     public void runSingleThread() {
         Chunk[] chunk = new Chunk[100];
-
         for (int i = 0; i < chunk.length; i++) {
             chunk[i] = new Chunk();
             chunk[i].setBlocks();
